@@ -12,12 +12,12 @@ describe Solver do
         expect{solver.factorial(-3)}.to raise_error
     end
     end
-    
+
     context 'Reverse' do
         it'takes one argument, an integer N, and returns the factorial for that number' do
         solver = Solver.new
         solver = solver.reverse('hello')
-        expect(solver).to equal 'olleh'
+        expect(solver).to eq 'olleh'
         end
     end
 end
