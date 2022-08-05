@@ -15,16 +15,15 @@ class Solver
     str.reverse
   end
 
-  def fizzbuzz(num);
-    if num % 5 == 0 && num % 3 == 0      
+  def fizzbuzz(num)
+    if (num % 5).zero? && (num % 3).zero?
       'fizzbuzz'
-    elsif (num % 3 == 0)
-     'fizz'
-    elsif (num % 5 == 0)
-       'buzz'
+    elsif (num % 3).zero?
+      'fizz'
+    elsif (num % 5).zero?
+      'buzz'
     else
-       "#{num}"
-    end 
-
-end
+      num.to_s
+    end
+  end
 end
